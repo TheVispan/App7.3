@@ -4,7 +4,7 @@ from django.urls import reverse
 
 
 class Article(models.Model):
-    title = models.CharField(max_lenght=255)
+    title = models.CharField(max_length=255)
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, )
